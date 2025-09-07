@@ -1,14 +1,13 @@
-import React from "react";
 
 export const App = () => {
   return (
-    <div>
+    <>
         <MovieCards/>
         <MovieCards/>
         <MovieCards/>
         <MovieCards/>
         <MovieCards/>
-    </div>
+    </>
   );
 };
 
