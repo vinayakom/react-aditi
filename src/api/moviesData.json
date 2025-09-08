@@ -1,0 +1,52 @@
+[
+    {
+        "movieId": "Chhaava",
+        "movieName": "Chhaava",
+        "movieImg_url": "chhavva.webp",
+        "movieRating": "7.3/10",
+        "movieDescription": "A historical drama based on the life of Chhatrapati Sambhaji Maharaj, the son of Chhatrapati Shivaji Maharaj.",
+        "movieCast": ["Vicky Kaushal", "Rashmika Mandanna"],
+        "movieGenre": ["History"],
+        "movieWatch_url": "https://www.imdb.com/title/tt27922706/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_chhaav"
+    },
+    {
+        "movieId": "Saiyaara",
+        "movieName": "Saiyaara",
+        "movieImg_url": "saiyaara.jpg",
+        "movieRating": "6.4/10",
+        "movieDescription": "Vaani and Krish will have to navigate life, their problems, their insecurities to hopefully realise that only love can be the answer to everything.",
+        "movieCast": ["Ahaan Panday", "Aneet Padda"],
+        "movieGenre": ["Romance"],
+        "movieWatch_url": "https://www.imdb.com/title/tt28037987/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_saiyaar"
+    },
+    {
+        "movieId": "PushpaPart2",
+        "movieName": "Pushpa: The Rule - Part 2",
+        "movieImg_url": "PushpaPart2.png",
+        "movieRating": "6.1/10",
+        "movieDescription": "A smuggling kingpin faces off against a vengeful rival while manipulating politics, making big deals, and navigating tense confrontations. A public apology leads to a dramatic showdown, ending with challenge.",
+        "movieCast": ["Allu Arjun", "Rashmika Mandanna"],
+        "movieGenre": ["Action"],
+        "movieWatch_url": "https://www.imdb.com/title/tt16539454/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_Pushpa"
+    },
+    {
+        "movieId": "Animal",
+        "movieName": "Animal",
+        "movieImg_url": "Animal.jpg",
+        "movieRating": "6.1/10",
+        "movieDescription": "The hardened son of a powerful industrialist returns home after years abroad and vows to take bloody revenge on those threatening his father's life.",
+        "movieCast": ["Ranbir Kapoor", "Rashmika Mandanna"],
+        "movieGenre": ["Thriller"],
+        "movieWatch_url": "https://www.imdb.com/title/tt13751694/?ref_=nv_sr_srsg_3_tt_8_nm_0_in_0_q_Animal"
+    },
+    {
+        "movieId": "Baahubali2",
+        "movieName": "Baahubali 2: The Conclusion",
+        "movieImg_url": "Baahubali2.jpg",
+        "movieRating": "8.2/10",
+        "movieDescription": "Amarendra Baahubali, the heir apparent to the throne of Mahishmati, finds his life and relationships endangered as his adoptive brother Bhallaladeva conspires to claim the throne.",
+        "movieCast": ["Prabhas", "Anushka Shetty"],
+        "movieGenre": ["Drama"],
+        "movieWatch_url": "https://www.imdb.com/title/tt4849438/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_Baahubali%25202"
+    }
+]
