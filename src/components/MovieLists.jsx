@@ -1,3 +1,4 @@
+
 export const MovieLists = ({ value }) => {
 
     const { movieImg_url, movieName, movieRating, movieGenre, movieDescription, movieCast, movieWatch_url } = value;
@@ -6,16 +7,25 @@ export const MovieLists = ({ value }) => {
         padding: "1.2rem 2.4rem",
         border: "none",
         fontSize: "1.6rem",
-        backgroundColor: "var(--btn-hover-bg-color)",
-        color: "var(--bg-color)",
+        backgroundColor: `${movieRating >= 7 ? "#7dcea0" : "#f7dc6f"}`,
+        color: "var(--btn-color)",
+        fontWeight: "bold",
+        cursor: "pointer",
     };
 
+    const ratingClass = movieRating >= 7 ? "super-hit" : "average";
+    
     return (
         <li className="card">
             <div><img src={movieImg_url} alt={movieImg_url} height="40%" width="40%" /></div>
             <div className="card-content">
                 <h2>Name: {movieName}</h2>
-                <h3>Ratings: {movieRating}</h3>
+                <h3>
+                    Rating:
+                    <span className={`rating ${ratingClass}`}>
+                        {movieRating}
+                    </span>
+                </h3>
                 <p>Summary: {movieDescription}</p>
                 <p>Genre: {movieGenre.join(", ")}</p>
                 <p>Cast: {movieCast.join(", ")}</p>
