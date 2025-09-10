@@ -2,7 +2,7 @@
     {
         "movieId": "Chhaava",
         "movieName": "Chhaava",
-        "movieImg_url": "chhavva.webp",
+        "movieImg_url": "chhavva.jpg",
         "movieRating": "7.3/10",
         "movieDescription": "A historical drama based on the life of Chhatrapati Sambhaji Maharaj, the son of Chhatrapati Shivaji Maharaj.",
         "movieCast": ["Vicky Kaushal", "Rashmika Mandanna"],
@@ -21,8 +21,8 @@
     },
     {
         "movieId": "PushpaPart2",
-        "movieName": "Pushpa: The Rule - Part 2",
-        "movieImg_url": "PushpaPart2.png",
+        "movieName": "Pushpa: Part 2",
+        "movieImg_url": "PushpaPart2.jpg",
         "movieRating": "6.1/10",
         "movieDescription": "A smuggling kingpin faces off against a vengeful rival while manipulating politics, making big deals, and navigating tense confrontations.",
         "movieCast": ["Allu Arjun", "Rashmika Mandanna"],
@@ -32,7 +32,7 @@
     {
         "movieId": "Animal",
         "movieName": "Animal",
-        "movieImg_url": "Animal.jpg",
+        "movieImg_url": "Animal.webp",
         "movieRating": "6.1/10",
         "movieDescription": "The hardened son of a powerful industrialist returns home after years abroad and vows to take bloody revenge on those threatening his father's life.",
         "movieCast": ["Ranbir Kapoor", "Rashmika Mandanna"],
@@ -41,8 +41,8 @@
     },
     {
         "movieId": "Baahubali2",
-        "movieName": "Baahubali 2: The Conclusion",
-        "movieImg_url": "Baahubali2.jpg",
+        "movieName": "Baahubali 2",
+        "movieImg_url": "Baahubali2.webp",
         "movieRating": "8.2/10",
         "movieDescription": "Amarendra Baahubali, the heir apparent to the throne of Mahishmati, finds his life and relationships endangered as his adoptive brother Bhallaladeva conspires to claim the throne.",
         "movieCast": ["Prabhas", "Anushka Shetty"],
