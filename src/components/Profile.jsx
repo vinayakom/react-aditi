@@ -28,7 +28,19 @@ function Profile() {
                 <p>Hobbies: Gaming, Cooking</p>
                 <button>Contact</button>
             </ProfileCard>
-
+            
+            <ProfileCard
+                name="John"
+                age={30}
+                greeting={
+                    <div>
+                        <strong>Hi John !!</strong>
+                    </div>
+                }
+            >
+                <p>Hobbies: Reading, Hiking</p>
+                <button>Contact</button>
+            </ProfileCard>
         </div>
     );
 }
