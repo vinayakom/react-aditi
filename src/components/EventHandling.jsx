@@ -13,8 +13,8 @@ export const EventHandling = () => {
         alert("Button onClick!");
     }
 
-    const handleWelcomUser = () => {
-        console.log("Welcome User!");
+    const handleWelcomUser = (user) => {
+        console.log(`Welcome ${user}!`);
         alert("Welcome User!");
     };
 
