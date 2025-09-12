@@ -14,12 +14,12 @@ export const MovieLists = ({ value }) => {
         cursor: "pointer",
     };
 
-    const ratingClass = movieRating >= 7 ? styles.average : styles.average;
+    const ratingClass = movieRating >= 7 ? styles["super-hit"] : styles.average;
 
     return (
         <li className={styles.card}>
             <div><img src={movieImg_url} alt={movieImg_url} height="40%" width="40%" /></div>
-            <div className="cardContent">
+            <div className={styles["card-content"]}>
                 <h2>Name: {movieName}</h2>
                 <h3>
                     Rating:
