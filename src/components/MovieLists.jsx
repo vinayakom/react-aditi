@@ -1,6 +1,7 @@
 import styles from "./MovieCards.module.css";
 import styled from "styled-components";
 
+
 export const MovieLists = ({ value }) => {
 
     const { movieImg_url, movieName, movieRating, movieGenre, movieDescription, movieCast, movieWatch_url } = value;
@@ -55,7 +56,7 @@ export const MovieLists = ({ value }) => {
                         {movieRating}
                     </span>
                 </h3>
-                <p>Summary: {movieDescription}</p>
+                <p className="text-3xl font-bold underline">Summary: {movieDescription}</p>
                 <p>Genre: {movieGenre.join(", ")}</p>
                 <p>Cast: {movieCast.join(", ")}</p>
                 <a href={movieWatch_url} target="_blank">
