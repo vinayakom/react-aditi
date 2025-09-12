@@ -1,5 +1,6 @@
 import { MovieCards } from "./components/MovieCards";
-import "./components/MovieCards.css";
+//import "./components/MovieCards.css";
+import "./components/MovieCards.module.css";
 
 export const App = () => {
   return (

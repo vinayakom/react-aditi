@@ -1,3 +1,4 @@
+import styles from "./MovieCards.module.css";
 
 export const MovieLists = ({ value }) => {
 
@@ -13,16 +14,16 @@ export const MovieLists = ({ value }) => {
         cursor: "pointer",
     };
 
-    const ratingClass = movieRating >= 7 ? "super-hit" : "average";
-    
+    const ratingClass = movieRating >= 7 ? styles.average : styles.average;
+
     return (
-        <li className="card">
+        <li className={styles.card}>
             <div><img src={movieImg_url} alt={movieImg_url} height="40%" width="40%" /></div>
-            <div className="card-content">
+            <div className="cardContent">
                 <h2>Name: {movieName}</h2>
                 <h3>
                     Rating:
-                    <span className={`rating ${ratingClass}`}>
+                    <span className={`${styles.rating} ${ratingClass}`}>
                         {movieRating}
                     </span>
                 </h3>
