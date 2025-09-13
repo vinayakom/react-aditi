@@ -1,7 +1,7 @@
 import { MovieCards } from "./components/MovieCards";
 //import "./components/MovieCards.css";
 import "./components/MovieCards.module.css";
-import { EventHandling } from "./components/EventHandling";
+// import { EventHandling } from "./components/EventHandling";
 
 export const App = () => {
   return (
