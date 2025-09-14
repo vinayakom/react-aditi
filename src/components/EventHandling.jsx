@@ -29,7 +29,7 @@ export const EventHandling = () => {
             <button onClick={(event) => console.log(event)}>Inline Function</button>
             <br />
             <br />
-            <button onClick={() => alert("I am Inline arrow function call")}>Inline Arrow Function</button>
+            <button onClick={() => alert("I am Inline arrow function call")}>Inline Function</button>
             <br />
             <br />
             <button onClick={handleWelcomUser}>Welcome User Call</button>
