@@ -28,9 +28,9 @@ const WelcomeUser = (props) => {
     
     return (
         <>
-            <button onClick={props.HandleWelcomeUser}>Click</button>
-            <button onMouseEnter={props.handleHover}>Hover me</button>
+            <button onClick={props.onClick}>Click</button>
+            <button onMouseEnter={props.onMouseEnter}>Hover me</button>
             <button onClick={handleGreeting}>Greeting</button>
         </>
-    )
-}
+    );
+};
