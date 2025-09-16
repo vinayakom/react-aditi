@@ -4,8 +4,9 @@
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
 // import { EventPropagation } from "./components/EventPropagation";
+import { DerivedState } from "./components/DerivedState";
 import "./components/EventHandling.css";
-import { State } from "./components/hooks/State";
+//import { State } from "./components/hooks/State";
 
 export const App = () => {
   return (
@@ -15,7 +16,8 @@ export const App = () => {
       {/* <EventHandling /> */}
       {/* {<EventProps />} */}
       {/* {<EventPropagation />} */}
-      <State />
+      {/* <State /> */}
+      <DerivedState />
     </section>
   );
 };
