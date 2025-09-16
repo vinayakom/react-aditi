@@ -1,8 +1,9 @@
-import { MovieCards } from "./components/MovieCards";
+// import { MovieCards } from "./components/MovieCards";
 //import "./components/MovieCards.css";
 // import "./components/MovieCards.module.css";
 // import { EventHandling } from "./components/EventHandling";
-import { EventProps } from "./components/EventProps";
+// import { EventProps } from "./components/EventProps";
+import { EventPropagation } from "./components/EventPropagation";
 
 export const App = () => {
   return (
@@ -10,7 +11,8 @@ export const App = () => {
       {/* <h1 className="card-heading">Best Movies List</h1> */}
       {/* <MovieCards /> */}
       {/* <EventHandling /> */}
-      {<EventProps />}
+      {/* {<EventProps />} */}
+      {<EventPropagation />}
     </section>
   );
 };
