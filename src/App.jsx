@@ -4,8 +4,9 @@
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
 // import { EventPropagation } from "./components/EventPropagation";
-import { DerivedState } from "./components/DerivedState";
+// import { DerivedState } from "./components/DerivedState";
 import "./components/EventHandling.css";
+import { LiftStateUp } from "./components/LiftStateUp";
 //import { State } from "./components/hooks/State";
 
 export const App = () => {
@@ -17,7 +18,8 @@ export const App = () => {
       {/* {<EventProps />} */}
       {/* {<EventPropagation />} */}
       {/* <State /> */}
-      <DerivedState />
+      {/* <DerivedState /> */}
+      <LiftStateUp/>
     </section>
   );
 };
