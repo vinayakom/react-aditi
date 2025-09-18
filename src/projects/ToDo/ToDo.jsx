@@ -48,6 +48,10 @@ export const ToDo = () => {
         setTask(updatedTasks);        
     };
     
+    const handleClearAllTasks = () => {
+        setTask([]);
+    };
+
     return (
         <section className="todo-container">
             <header>
@@ -87,6 +91,9 @@ export const ToDo = () => {
                         })
                     }
                 </ul>
+            </section>
+            <section>
+                <button className="clear-btn" onClick={handleClearAllTasks}>Clear all</button>
             </section>
         </section>
     );
