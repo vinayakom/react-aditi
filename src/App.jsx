@@ -5,9 +5,10 @@
 // import { EventProps } from "./components/EventProps";
 // import { EventPropagation } from "./components/EventPropagation";
 // import { DerivedState } from "./components/DerivedState";
-import "./components/EventHandling.css";
-import { LiftStateUp } from "./components/LiftStateUp";
+// import { LiftStateUp } from "./components/LiftStateUp";
 //import { State } from "./components/hooks/State";
+import "./components/EventHandling.css";
+import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 
 export const App = () => {
   return (
@@ -19,7 +20,8 @@ export const App = () => {
       {/* {<EventPropagation />} */}
       {/* <State /> */}
       {/* <DerivedState /> */}
-      <LiftStateUp/>
+      {/* <LiftStateUp/> */}
+      <ToggleSwitch />
     </section>
   );
 };
