@@ -193,3 +193,7 @@ li span {
 .clear-btn:hover {
   background-color: #8d1407;
 }
+
+.todo-input {
+  color: #050505;
+}

@@ -7,12 +7,14 @@
 // import { DerivedState } from "./components/DerivedState";
 // import { LiftStateUp } from "./components/LiftStateUp";
 //import { State } from "./components/hooks/State";
-import "./components/EventHandling.css";
-import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
+// import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
+// import "./components/EventHandling.css";
+import { ToDo } from "./projects/ToDo/ToDo";
+
 
 export const App = () => {
   return (
-    <section className="container">
+    <section>
       {/* <h1 className="card-heading">Best Movies List</h1> */}
       {/* <MovieCards /> */}
       {/* <EventHandling /> */}
@@ -21,7 +23,8 @@ export const App = () => {
       {/* <State /> */}
       {/* <DerivedState /> */}
       {/* <LiftStateUp/> */}
-      <ToggleSwitch />
+      {/* <ToggleSwitch /> */}
+      <ToDo />
     </section>
   );
 };
