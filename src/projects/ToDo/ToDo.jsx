@@ -52,6 +52,7 @@ export const ToDo = () => {
         setTask(updatedTasks);
     };    
 
+    localStorage.setItem("tasks", JSON.stringify(task));
 
     return (
         <section className="todo-container">
