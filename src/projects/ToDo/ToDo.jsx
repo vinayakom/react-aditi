@@ -10,28 +10,48 @@ export const ToDo = () => {
 
     const handleFormSubmit = (inputValue) => {
 
-        if (!inputValue) {
+        const { id, content, checked } = inputValue;
+
+        if (!content) {
             alert("Task cannot be empty !!");
             return;
         }
 
-        if (task.includes(inputValue)) {
+        // if (task.includes(inputValue)) {
+        //     alert("Task already exists !!");
+        //     return;
+        // }
+
+        const ifTaskContentMatches = task.find((currentTask) => currentTask.content === content);
+
+        if (ifTaskContentMatches) {
             alert("Task already exists !!");
             return;
         }
 
-        setTask((prevTask) => [...prevTask, inputValue]);
+        setTask((prevTask) => [...prevTask, { id, content, checked }]);
     }
 
-    const handleDeleteTask = (curTask) => {
-        console.log(curTask);
-        const updatedTasks = task.filter((t) => t !== curTask);
+    const handleDeleteTask = (value) => {
+        const updatedTasks = task.filter((curTask) => curTask.content !== value);
         setTask(updatedTasks);
     };
 
     const handleClearAllTasks = () => {
         setTask([]);
     };
+
+    const handleCheckedTask = (content) => {
+        const updatedTasks = task.map((curTask) => {
+            if (curTask.content === content) {
+                return { ...curTask, checked: !curTask.checked };
+            } else {
+                return curTask;
+            }            
+        });
+        setTask(updatedTasks);
+    };    
+
 
     return (
         <section className="todo-container">
@@ -45,17 +65,21 @@ export const ToDo = () => {
             <section>
                 <ul className="task-list">
                     {
-                        task.map((curTask, index) => {
+                        task.map((curTask) => {
                             return (
                                 <ToDoList
-                                    key={index}
-                                    data={curTask}
-                                    onHandleDeleteTask={handleDeleteTask} />
+                                    key={curTask.id}
+                                    data={curTask.content}
+                                    checked={curTask.checked}
+                                    onHandleDeleteTask={handleDeleteTask}
+                                    onHandleCheckedTask={handleCheckedTask}
+                                />
                             );
                         })
                     }
                 </ul>
             </section>
+
             <section>
                 <button className="clear-btn" onClick={handleClearAllTasks}>Clear all</button>
             </section>
