@@ -3,10 +3,11 @@ import { useState } from "react";
 import { ToDoForm } from "./ToDoForm";
 import { ToDoList } from "./ToDoList";
 import { ToDoDateTime } from "./ToDoDateTime";
+import { getLocalStorageTasks, setLocalStorageTasks } from "./ToDoLocalStorage";
 
 export const ToDo = () => {
 
-    const [task, setTask] = useState([]);
+    const [task, setTask] = useState(() => getLocalStorageTasks());
 
     const handleFormSubmit = (inputValue) => {
 
@@ -52,7 +53,7 @@ export const ToDo = () => {
         setTask(updatedTasks);
     };    
 
-    localStorage.setItem("tasks", JSON.stringify(task));
+    setLocalStorageTasks(task); 
 
     return (
         <section className="todo-container">
