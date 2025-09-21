@@ -9,7 +9,8 @@
 //import { State } from "./components/hooks/State";
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 // import "./components/EventHandling.css";
-import { ToDo } from "./projects/ToDo/ToDo";
+// import { ToDo } from "./projects/ToDo/ToDo";
+import { ShortCircuitExample } from "./components/hooks/ShortCircuit";
 
 
 export const App = () => {
@@ -24,7 +25,8 @@ export const App = () => {
       {/* <DerivedState /> */}
       {/* <LiftStateUp/> */}
       {/* <ToggleSwitch /> */}
-      <ToDo />
+      {/* <ToDo /> */}
+      <ShortCircuitExample />
     </section>
   );
 };
