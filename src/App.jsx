@@ -10,7 +10,8 @@
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 // import "./components/EventHandling.css";
 // import { ToDo } from "./projects/ToDo/ToDo";
-import { ShortCircuitExample } from "./components/hooks/ShortCircuit";
+// import { ShortCircuitExample } from "./components/hooks/ShortCircuit";
+import { Counter } from "./components/hooks/useState";
 
 
 export const App = () => {
@@ -26,7 +27,8 @@ export const App = () => {
       {/* <LiftStateUp/> */}
       {/* <ToggleSwitch /> */}
       {/* <ToDo /> */}
-      <ShortCircuitExample />
+      {/* <ShortCircuitExample /> */}
+      <Counter />
     </section>
   );
 };
