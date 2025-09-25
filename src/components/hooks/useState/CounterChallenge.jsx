@@ -7,11 +7,11 @@ export const CounterChallenge = () => {
     const [step, setStep] = useState(0);
 
     const handleIncrement = () => {
-        setCount(count + 1);
+        setCount(count + step);
     }
 
     const handleDecrement = () => {
-        setCount(count - 1);
+        setCount(count - step);
     }
 
     const handleReset = () => {
@@ -28,14 +28,14 @@ export const CounterChallenge = () => {
             <div>
                 <label>
                     Step:
-                    <input type="number" value={step} onChange={(i) => setStep(i.target.value)} />
+                    <input type="number" value={step} onChange={(i) => setStep(Number(i.target.value))} />
                 </label>
             </div>
 
             <div className="grid-three-cols">
-                <button onClick={handleDecrement}> - </button>
+                <button onClick={handleIncrement} disabled={count >= 100}> + </button>
                 <button onClick={handleReset}> Reset </button>
-                <button onClick={handleIncrement}> + </button>
+                <button onClick={handleDecrement} disabled={count <= 0}> - </button>
             </div>
         </div>
     );
