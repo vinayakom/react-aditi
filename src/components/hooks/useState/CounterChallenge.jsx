@@ -4,6 +4,7 @@ import "../Hooks.css";
 export const CounterChallenge = () => {
 
     const [count, setCount] = useState(0);
+    const [step, setStep] = useState(0);
 
     const handleIncrement = () => {
         setCount(count + 1);
@@ -27,7 +28,7 @@ export const CounterChallenge = () => {
             <div>
                 <label>
                     Step:
-                    <input type="number" />
+                    <input type="number" value={step} onChange={(i) => setStep(i.target.value)} />
                 </label>
             </div>
 
