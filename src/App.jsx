@@ -11,7 +11,8 @@
 // import "./components/EventHandling.css";
 // import { ToDo } from "./projects/ToDo/ToDo";
 // import { ShortCircuitExample } from "./components/hooks/ShortCircuit";
-import { Counter } from "./components/hooks/useState";
+// import { Counter } from "./components/hooks/useState";
+import { CounterChallenge } from "./components/hooks/useState/CounterChallenge";
 
 
 export const App = () => {
@@ -28,7 +29,8 @@ export const App = () => {
       {/* <ToggleSwitch /> */}
       {/* <ToDo /> */}
       {/* <ShortCircuitExample /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <CounterChallenge />
     </section>
   );
 };
