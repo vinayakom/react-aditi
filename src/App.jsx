@@ -12,7 +12,8 @@
 // import { ToDo } from "./projects/ToDo/ToDo";
 // import { ShortCircuitExample } from "./components/hooks/ShortCircuit";
 // import { Counter } from "./components/hooks/useState";
-import { CounterChallenge } from "./components/hooks/useState/CounterChallenge";
+// import { CounterChallenge } from "./components/hooks/useState/CounterChallenge";
+import { ControlledForm } from "./components/hooks/useState/ControlledForm";
 
 
 export const App = () => {
@@ -30,7 +31,8 @@ export const App = () => {
       {/* <ToDo /> */}
       {/* <ShortCircuitExample /> */}
       {/* <Counter /> */}
-      <CounterChallenge />
+      {/* <CounterChallenge /> */}
+      <ControlledForm />
     </section>
   );
 };
