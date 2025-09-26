@@ -16,8 +16,8 @@
 //import { ControlledForm } from "./components/hooks/useState/ControlledForm";
 //import { RegistrationForm } from "./components/hooks/useState/RegistrationForm";
 //import { RegistrationFormReact } from "./components/hooks/useState/RegistrationFormReact";
-import { LoginForm } from "./components/hooks/useState/LoginForm";
-
+//import { LoginForm } from "./components/hooks/useState/LoginForm";
+import { ContactForm } from "./components/hooks/useState/ContactForm";
 
 
 export const App = () => {
@@ -39,7 +39,8 @@ export const App = () => {
       {/* <ControlledForm /> */}
       {/* <RegistrationForm /> */}
       {/* <RegistrationFormReact /> */}
-      <LoginForm />
+      {/* <LoginForm /> */}
+      <ContactForm />
     </section>
   );
 };
