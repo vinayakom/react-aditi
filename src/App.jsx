@@ -15,8 +15,9 @@
 //import { CounterChallenge } from "./components/hooks/useState/CounterChallenge";
 //import { ControlledForm } from "./components/hooks/useState/ControlledForm";
 //import { RegistrationForm } from "./components/hooks/useState/RegistrationForm";
+//import { RegistrationFormReact } from "./components/hooks/useState/RegistrationFormReact";
+import { LoginForm } from "./components/hooks/useState/LoginForm";
 
-import { RegistrationFormReact } from "./components/hooks/useState/RegistrationFormReact";
 
 
 export const App = () => {
@@ -37,7 +38,8 @@ export const App = () => {
       {/* <CounterChallenge /> */}
       {/* <ControlledForm /> */}
       {/* <RegistrationForm /> */}
-      <RegistrationFormReact />
+      {/* <RegistrationFormReact /> */}
+      <LoginForm />
     </section>
   );
 };

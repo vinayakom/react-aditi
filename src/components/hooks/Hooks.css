@@ -132,3 +132,8 @@ p {
 .grid-three-cols {
   grid-template-columns: repeat(3, 1fr);
 }
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 24px 0px, 
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
