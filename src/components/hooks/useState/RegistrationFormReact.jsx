@@ -1,36 +1,21 @@
 import { useState } from "react";
 import "../Hooks.css"
 
-export const RegistrationForm = () => {
+export const RegistrationFormReact = () => {
 
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
+    const [user, setUser] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        password: "",
+        phoneNumber: "",
+    });
+    
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
 
-        switch (name) {
-            case "firstName":
-                setFirstName(value);
-                break;
-            case "lastName":
-                setLastName(value);
-                break;
-            case "email":
-                setEmail(value);
-                break;
-            case "password":
-                setPassword(value);
-                break;
-            case "phone":
-                setPhoneNumber(value);
-                break;
-            default:
-                break;
-        }
+        setUser((prev) => ({...prev, [name]: value }))
     };
 
     const handleFormSubmit = (event) => {
@@ -57,27 +42,27 @@ export const RegistrationForm = () => {
                     <label htmlFor="firstName">
                         First Name:
                     </label>
-                    <input type="text" name="firstName" placeholder="Enter First Name" required value={firstName} onChange={handleInputChange} />
+                    <input type="text" name="firstName" placeholder="Enter First Name" required value={user.firstName} onChange={handleInputChange} />
 
                     <label htmlFor="lastName">
                         Last Name:
                     </label>
-                    <input type="text" name="lastName" placeholder="Enter Last Name" required value={lastName} onChange={handleInputChange} />
+                    <input type="text" name="lastName" placeholder="Enter Last Name" required value={user.lastName} onChange={handleInputChange} />
 
                     <label htmlFor="email">
                         Email:
                     </label>
-                    <input type="text" name="email" placeholder="Enter Email" required value={email} onChange={handleInputChange} />
+                    <input type="text" name="email" placeholder="Enter Email" required value={user.email} onChange={handleInputChange} />
 
                     <label htmlFor="password">
                         Password:
                     </label>
-                    <input type="password" name="password" placeholder="Enter Password" required value={password} onChange={handleInputChange} />
+                    <input type="password" name="password" placeholder="Enter Password" required value={user.password} onChange={handleInputChange} />
 
                     <label htmlFor="phone">
                         Phone Number:
                     </label>
-                    <input type="text" name="phone" placeholder="Enter Phone" required value={phoneNumber} onChange={handleInputChange} />
+                    <input type="text" name="phone" placeholder="Enter Phone" required value={user.phoneNumber} onChange={handleInputChange} />
 
                     <p>
                         By creating an account you agree to our
