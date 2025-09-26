@@ -1,19 +1,21 @@
-// import { MovieCards } from "./components/MovieCards";
-// import "./components/MovieCards.css";
-// import "./components/MovieCards.module.css";
-// import { EventHandling } from "./components/EventHandling";
-// import { EventProps } from "./components/EventProps";
-// import { EventPropagation } from "./components/EventPropagation";
-// import { DerivedState } from "./components/DerivedState";
-// import { LiftStateUp } from "./components/LiftStateUp";
+//import { MovieCards } from "./components/MovieCards";
+//import "./components/MovieCards.css";
+//import "./components/MovieCards.module.css";
+//import { EventHandling } from "./components/EventHandling";
+//import { EventProps } from "./components/EventProps";
+//import { EventPropagation } from "./components/EventPropagation";
+//import { DerivedState } from "./components/DerivedState";
+//import { LiftStateUp } from "./components/LiftStateUp";
 //import { State } from "./components/hooks/State";
-// import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
-// import "./components/EventHandling.css";
-// import { ToDo } from "./projects/ToDo/ToDo";
-// import { ShortCircuitExample } from "./components/hooks/ShortCircuit";
-// import { Counter } from "./components/hooks/useState";
-// import { CounterChallenge } from "./components/hooks/useState/CounterChallenge";
-import { ControlledForm } from "./components/hooks/useState/ControlledForm";
+//import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
+//import "./components/EventHandling.css";
+//import { ToDo } from "./projects/ToDo/ToDo";
+//import { ShortCircuitExample } from "./components/hooks/ShortCircuit";
+//import { Counter } from "./components/hooks/useState";
+//import { CounterChallenge } from "./components/hooks/useState/CounterChallenge";
+//import { ControlledForm } from "./components/hooks/useState/ControlledForm";
+
+import { RegistrationForm } from "./components/hooks/useState/RegistrationForm";
 
 
 export const App = () => {
@@ -32,7 +34,8 @@ export const App = () => {
       {/* <ShortCircuitExample /> */}
       {/* <Counter /> */}
       {/* <CounterChallenge /> */}
-      <ControlledForm />
+      {/* <ControlledForm /> */}
+      <RegistrationForm />
     </section>
   );
 };

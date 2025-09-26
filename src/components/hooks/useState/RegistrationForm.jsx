@@ -14,7 +14,6 @@ export const RegistrationForm = () => {
                     </label>
                     <input type="text" name="firstName" placeholder="Enter First Name" required />
 
-
                     <label htmlFor="lastName">
                         Last Name:
                     </label>
@@ -33,11 +32,11 @@ export const RegistrationForm = () => {
                     <label htmlFor="phone">
                         Phone Number:
                     </label>
-                    <input type="number" name="phone" placeholder="Enter Phone" required />
+                    <input type="text" name="phone" placeholder="Enter Phone" required />
 
                     <p>
-                        By creating an account you agree to our 
-                        <a href="#" style={{ color: "dodgerblue" }}>Terms & Privacy</a>.
+                        By creating an account you agree to our  
+                        <a href="#" style={{ color: "dodgerblue" }}> Terms & Privacy</a>.
                     </p>
 
                     <div className="clearfix">
