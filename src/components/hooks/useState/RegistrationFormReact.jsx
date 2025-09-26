@@ -10,26 +10,16 @@ export const RegistrationFormReact = () => {
         password: "",
         phoneNumber: "",
     });
-    
+
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-
-        setUser((prev) => ({...prev, [name]: value }))
+        setUser((prev) => ({ ...prev, [name]: value }))
     };
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-
-        const formData = {
-            firstName,
-            lastName,
-            email,
-            password,
-            phoneNumber
-        };
-
-        console.log("Form Data Submitted: ", formData);        
+        console.log(user);
     };
 
     return (
@@ -62,7 +52,7 @@ export const RegistrationFormReact = () => {
                     <label htmlFor="phone">
                         Phone Number:
                     </label>
-                    <input type="text" name="phone" placeholder="Enter Phone" required value={user.phoneNumber} onChange={handleInputChange} />
+                    <input type="text" name="phoneNumber" placeholder="Enter Phone" required value={user.phoneNumber} onChange={handleInputChange} />
 
                     <p>
                         By creating an account you agree to our
@@ -72,10 +62,10 @@ export const RegistrationFormReact = () => {
                     <div className="clearfix">
                         <button type="submit" className="signupbtn">Register</button>
                     </div>
-                </div>                
+                </div>
             </form>
 
-            
+
         </>
     );
 }
