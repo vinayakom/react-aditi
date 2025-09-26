@@ -1,10 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./index.css"
 
 export const EffectChallenge = () => {
 
     const [count, setCount] = useState(0);
     const [name, setName] = useState("");
+
+    useEffect(() => {
+       document.title = `count: ${count}`
+    }, [count])
+
+    useEffect(() => {
+        console.log(name);
+    }, [name])
 
     return (
         <div className="container effect-container">
@@ -16,7 +24,7 @@ export const EffectChallenge = () => {
             <p>
                 Name: <span> {name} </span>
             </p>
-            <input className="input" type="text" />
+            <input className="input" type="text" value={name} onChange={(event) => setName(event.target.value)} />
         </div>
     );
 };
